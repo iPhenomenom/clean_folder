@@ -59,13 +59,14 @@ def sort_func(path_dir):
             continue
         else:
             os.rmdir(dir_p)
-
-
-if __name__ == "__main__":
-    #path_d = 'C:\\Users\Дмитрий\Desktop\Новая папка (8)'
+def main():
+    # path_d = 'C:\\Users\Дмитрий\Desktop\Новая папка (8)'
     path_d = input('[+] Введите путь к директории для сортировки: ')
     if not Path(path_d).exists():
         print('[-] Директории не существует')
     else:
         sort_func(path_d)
     print('[!] Сортировка завершена')
+
+if __name__ == "__main__":
+    main()

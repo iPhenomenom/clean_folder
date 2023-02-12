@@ -1,10 +1,12 @@
 from setuptools import setup
 
 setup(name='clean_folder',
-      version='1',
+      version='0.0.1',
       description='Very useful code',
-      url='http://github.com/dummy_user/useful',
+      url='https://github.com/iPhenomenom/clean_folder',
       author='Dmitriy',
       author_email='mytoreh@gmail.com',
       license='MIT',
-      packages=['clean_folder'])
+      packages=['clean_folder'],
+      entry_points={'console_scripts': ['clean_folder=clean_folder.clean:main']}
+      )
